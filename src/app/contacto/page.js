@@ -1,0 +1,56 @@
+import { useState, useEffect } from 'react';
+import Layout from '../layout'
+
+
+export default function Contacto() {
+  const [formData, setFormData] = useState({
+    nombre: '',
+    email: '',
+    mensaje: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert('Mensaje enviado');
+  };
+
+  return (
+    <div className="container">
+      <h1>Ayuda</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="nombre"
+          value={formData.nombre}
+          onChange={handleChange}
+          placeholder="Nombre"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="Email"
+          required
+        />
+        <textarea
+          name="mensaje"
+          value={formData.mensaje}
+          onChange={handleChange}
+          placeholder="Mensaje"
+          required
+        />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  );
+}
