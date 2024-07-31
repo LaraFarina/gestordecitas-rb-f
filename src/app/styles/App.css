@@ -7,31 +7,29 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    45deg,
-    #db34a9,
-    #cc2eb2
-  ); /* Gradient background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  border-radius: 10px; /* Rounded corners */
-  position: relative;
-  overflow: hidden;
+  
 }
 
-.container::before {
-  content: "";
-  position: absolute;
+.container {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.1) 1px,
-      transparent 1px
-    ),
-    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 20px 20px;
-  pointer-events: none; /* Allow clicking through the pattern layer */
+  --s: 60px;
+  --c1: #180a22;
+  --c2: #5b42f3;
+  --_g: radial-gradient(
+    25% 25% at 25% 25%,
+    var(--c1) 99%,
+    rgba(0, 0, 0, 0) 101%
+  );
+  background: var(--_g) var(--s) var(--s) / calc(2 * var(--s))
+      calc(2 * var(--s)),
+    var(--_g) 0 0 / calc(2 * var(--s)) calc(2 * var(--s)),
+    radial-gradient(50% 50%, var(--c2) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s)
+      var(--s),
+    repeating-conic-gradient(var(--c2) 0 50%, var(--c1) 0 100%)
+      calc(0.5 * var(--s)) 0 / calc(2 * var(--s)) var(--s);
 }
+
 
 .container {
   max-width: 100%;
@@ -152,33 +150,5 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* Estilos para el componente QuienesSomos */
-.quienes-somos-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-  background-color: #f9f9f9; /* Color de fondo suave */
-}
 
-.quienes-somos-welcome-text {
-  max-width: 600px;
-  text-align: center;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff; /* Fondo blanco para el texto */
-}
 
-.quienes-somos-welcome-text h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #333333; /* Color de texto oscuro */
-}
-
-.quienes-somos-welcome-text p {
-  font-size: 1rem;
-  color: #666666; /* Color de texto más claro */
-  line-height: 1.6;
-}

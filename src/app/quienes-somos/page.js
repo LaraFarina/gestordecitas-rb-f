@@ -1,13 +1,12 @@
 'use client'
+import '../quienes-somos/style.css'
 import Layout from '../layout'
 export default function QuienesSomos() {
     return (
       <Layout>
-      <div className="container">
-       <div className="welcome-text">
-            <h2>¿Quienes somos?</h2>
-            <p>Somos una organización dedicada a la administración de citas de veterinario dedicado a ayudar a las mascotas.</p>
-          </div>
+        <div class="container">
+      <h2>¿Quienes somos?</h2>
+      <p>Somos una organización que se dedica a organizar las consultas con los pacientes.</p>
       </div>
       </Layout>
     );

@@ -1,0 +1,70 @@
+/* Estilos generales del contenedor del formulario */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+/* Estilos del formulario */
+.container form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Alinea los campos del formulario a lo largo del ancho del formulario */
+}
+
+/* Estilo del título */
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fafafa;
+    text-align: center;
+}
+
+/* Estilo de los campos del formulario */
+.container input,
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container textarea {
+    resize: vertical; /* Permite cambiar el tamaño verticalmente */
+}
+
+/* Estilo del botón de enviar */
+.container button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px; /* Añadido margen superior para separar del resto de los campos */
+    align-self: center; /* Centra el botón dentro del formulario */
+}
+
+.container button:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+}
+
+.container button:focus {
+    outline: none;
+}

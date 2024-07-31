@@ -1,6 +1,7 @@
+'use client';
 import { useState, useEffect } from 'react';
 import Layout from '../layout'
-
+import '../contacto/style.css'
 
 export default function Contacto() {
   const [formData, setFormData] = useState({
@@ -23,8 +24,9 @@ export default function Contacto() {
   };
 
   return (
+    <Layout>
     <div className="container">
-      <h1>Ayuda</h1>
+      <h1>Necesito ayuda</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -52,5 +54,6 @@ export default function Contacto() {
         <button type="submit">Enviar</button>
       </form>
     </div>
+    </Layout>
   );
 }

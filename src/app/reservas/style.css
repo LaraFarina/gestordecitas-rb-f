@@ -1,0 +1,152 @@
+/* styles.css */
+
+/* Estilos para el componente Listado */
+.listado {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Alinea los campos del formulario a lo largo del ancho del formulario */
+}
+
+.listado h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.listado ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listado li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    align-items: flex-start; /* Alinea el contenido al principio del contenedor */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.listado li:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+}
+
+.listado p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.listado strong {
+    color: #333;
+}
+
+.listado button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: center; /* Alinea el botón al centro del contenedor li */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.listado button:hover {
+    background-color: #ff4b4b;
+    transform: scale(1.05);
+}
+
+.listado button:focus {
+    outline: none;
+}
+
+/* Estilos para el componente Formulario */
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+.formulario {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Alinea los campos del formulario a lo largo del ancho del formulario */
+}
+
+/* Estilo de los campos de formulario */
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formulario textarea {
+    resize: vertical; /* Permite cambiar el tamaño verticalmente */
+}
+
+/* Estilo del botón de submit */
+.formulario button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px; /* Añadido margen superior para separar del resto de los campos */
+    align-self: center; /* Centra el botón dentro del formulario */
+}
+
+.formulario button:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+}
+
+.formulario button:focus {
+    outline: none;
+}
+
+/* Estilo del mensaje de error */
+.error-message {
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center; /* Centra el mensaje de error */
+}

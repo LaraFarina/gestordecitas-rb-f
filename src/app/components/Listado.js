@@ -6,6 +6,7 @@ export default function Listado({ citas, eliminarCita }) {
       <h2>Listado de Citas</h2>
       <ul>
         {citas.map(cita => (
+          
           <li key={cita.id}>
             <p><strong>Nombre Mascota:</strong> {cita.nombreMascota}</p>
             <p><strong>Nombre Dueño:</strong> {cita.nombreDueño}</p>

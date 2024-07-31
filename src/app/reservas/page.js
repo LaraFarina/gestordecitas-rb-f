@@ -1,5 +1,6 @@
 'use client'
 import Layout from '../layout'
+import '../reservas/style.css'
 
 import { useState, useEffect } from 'react';
 import Formulario from '../components/Formulario';
