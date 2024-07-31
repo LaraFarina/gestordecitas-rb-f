@@ -25,13 +25,13 @@ export default function Reservas() {
   };
 
   return (
-    <Layout>
+
     <div className="container">
       <div className="contenido">
         <Formulario agregarCita={agregarCita} />
         <Listado citas={citas} eliminarCita={eliminarCita} />
       </div>
     </div>
-    </Layout>
+
   );
 }

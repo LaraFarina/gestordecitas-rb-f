@@ -24,7 +24,6 @@ export default function Contacto() {
   };
 
   return (
-    <Layout>
     <div className="container">
       <h1>Necesito ayuda</h1>
       <form onSubmit={handleSubmit}>
@@ -54,6 +53,6 @@ export default function Contacto() {
         <button type="submit">Enviar</button>
       </form>
     </div>
-    </Layout>
+
   );
 }
