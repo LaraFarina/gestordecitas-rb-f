@@ -15,7 +15,7 @@ export default function FormularioComponente({
         <input type="date" value={fecha} onChange={(e) => setFecha(e.target.value)} required />
         <input type="time" value={hora} onChange={(e) => setHora(e.target.value)} required />
         <textarea value={sintomas} onChange={(e) => setSintomas(e.target.value)} placeholder="Síntomas" required />
-        <button type="submit">AGREGAR CITA</button>
+        <button type="submit" className='ag'>AGREGAR CITA</button>
       </form>
     </div>
   );

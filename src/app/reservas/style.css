@@ -39,7 +39,8 @@
   /* Estilo para el botón de enviar del formulario */
   button {
     padding: 10px 20px;
-    background-color: #007bff; /* Color de fondo azul */
+    margin-left:10px;
+    background-color: #ff0000; /* Color de fondo azul */
     color: #ffffff; /* Texto blanco */
     border: none;
     border-radius: 4px;
@@ -49,9 +50,20 @@
   }
   
   button:hover {
-    background-color: #0056b3; /* Color de fondo azul oscuro en hover */
+    background-color: #b30000; /* Color de fondo azul oscuro en hover */
   }
   
+  .ag{
+    padding: 10px 20px;
+    margin-left:10px;
+    background-color: #a200ff; /* Color de fondo azul */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
   /* Estilo para la lista de citas */
   .listado {
     list-style: none;
