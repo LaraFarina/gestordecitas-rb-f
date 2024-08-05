@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Foto from './styles/Foto.jpg'
 import Layout from './layout'
-
+import './styleP.css'
 export default function Home() {
   return (
 <Layout>

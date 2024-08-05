@@ -1,30 +1,27 @@
-/* Estilo para el contenedor principal */
+/* style.css */
+
 .container {
-    max-width: 800px; /* Ancho máximo del contenedor */
-height: 30px;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 20px; /* Padding interno del contenedor */
-    text-align: center; /* Centra el texto dentro del contenedor */
-    color: #ffffff; /* Color de texto blanco por defecto */
-    min-height: 100vh; /* Asegura que el contenedor ocupe al menos el alto de la ventana */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente */
-  }
-  
-  /* Estilo para el título */
-  h2 {
-    font-size: 3em; /* Tamaño de fuente grande para el título */
-    margin: 0 0 20px 0; /* Elimina márgenes laterales y espacio debajo del título */
-    font-family: 'Arial', sans-serif; /* Fuente del título */
-    color: #ffffff; /* Color del texto blanco */
-  }
-  
-  /* Estilo para el párrafo */
-  p {
-    font-size: 1.2em; /* Tamaño de fuente del párrafo */
-    line-height: 1.6; /* Altura de línea para mejor legibilidad */
-    font-family: 'Georgia', serif; /* Fuente del párrafo */
-    margin: 0; /* Elimina márgenes predeterminados */
-  }
-  
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.125rem;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.containerQ{
+  background-color: white;
+  padding:30px;
+  border-radius: 16px;
+}

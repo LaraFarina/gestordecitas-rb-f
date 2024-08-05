@@ -1,0 +1,63 @@
+/* style.css */
+
+/* Estilo general para el contenedor */
+.containerC {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para el formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    width: 83%;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .fondo{
+    background-color: #ffffff;
+    width: 700px;
+    padding: 50px;
+    border-radius: 36px;
+  }

@@ -24,7 +24,7 @@ export default function Contacto() {
   };
 
   return (
-    <div className="container">
+    <div className='fondo'>
       <h1>Necesito ayuda</h1>
       <form onSubmit={handleSubmit}>
         <input
